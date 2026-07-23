@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZIYY OFFICIAL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Hanya ubah bagian ini jika ingin mengganti gambar */
+:root{
+    --bg:url("https://files.catbox.moe/dpsf3c.jpg");
+    --logo:url("https://files.catbox.moe/hnjny4.png");
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:var(--bg) center/cover no-repeat;
+    filter:blur(10px) brightness(.45);
+    transform:scale(1.12);
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(rgba(0,110,255,.25),rgba(0,0,0,.45));
+    z-index:-1;
+}
+
+.card{
+    width:390px;
+    max-width:92%;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+    text-align:center;
+    color:white;
+}
+
+.profile{
+    width:135px;
+    height:135px;
+    margin:auto;
+    border-radius:50%;
+    background:var(--logo) center/cover;
+    border:4px solid #33b5ff;
+    box-shadow:0 0 25px #33b5ff;
+}
+
+.title{
+    margin-top:20px;
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:2px;
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff,
+        #8fdcff,
+        #0066ff,
+        #00c6ff
+    );
+    background-size:300%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:gradient 6s linear infinite;
+}
+
+@keyframes gradient{
+    from{background-position:0%;}
+    to{background-position:300%;}
+}
+
+.info{
+    margin-top:28px;
+    text-align:left;
+    line-height:2;
+}
+
+.info span{
+    color:#7fd8ff;
+    font-weight:600;
+}
+
+.thanks{
+    margin-top:28px;
+    font-size:18px;
+    font-weight:600;
+    line-height:1.8;
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff,
+        #99e6ff,
+        #00c6ff
+    );
+    background-size:300%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:gradient 5s linear infinite;
+}
+
+.quote{
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    font-size:14px;
+    line-height:1.8;
+    color:#d7ebff;
+    font-style:italic;
+}
+
+.credit{
+    margin-top:10px;
+    color:#66c7ff;
+    font-weight:600;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="profile"></div>
+
+<div class="title">
+ZIYY OFFICIAL
+</div>
+
+<div class="info">
+<p><span>Nama Lengkap</span> : Ziyad Patahudin</p>
+<p><span>Tanggal Lahir</span> : 26-03-2012</p>
+<p><span>Asal Kota</span> : Cikarang Utara</p>
+<p><span>Nama Store</span> : ZIYY OFFICIAL</p>
+</div>
+
+<div class="thanks">
+Terima kasih karena sudah membuka website ziyy official.
+</div>
+
+<div class="quote">
+"Seseorang akan sadar dalam dua hal, diubah oleh suatu nasehat atau diubah oleh suatu kejadian."
+<div class="credit">
+- ziyyofficial
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
